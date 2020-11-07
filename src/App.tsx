@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useAuth0 } from "@auth0/auth0-react";
+import Layout from './components/Layout';
 
 const LoginButton = () => {
   const { loginWithRedirect } = useAuth0();
@@ -56,7 +57,7 @@ function App() {
   }, [user, getAccessTokenSilently]);
 
   return (
-    <div className="App">
+    <Layout>
       {isAuthenticated ? (
         <div>
           <img src={user.picture} alt={user.name} />
@@ -67,7 +68,7 @@ function App() {
         </div>
       ) : <LoginButton />
       }
-    </div>
+    </Layout>
   );
 }
 
