@@ -1,0 +1,30 @@
+:root {
+  // Colors
+  --black: #000; 
+  --white: #fff;
+  --primary: #10383b;
+  --bg: #F9F8F8;
+
+  // Fonts
+  --regular: 'Avenir Regular';
+  --demi: 'Avenir Demi';
+  --italic: 'Avenir Italic';
+  --bold: 'Avenir Bold';
+
+  // Borders
+  --radius-sm: 5px;
+  --radius-md: 20px;
+  --radius-circle: 100%;
+
+  // Opacity
+  --opacity-65: 65%;
+
+  // Hover
+  --hover-elm: var(--bg);
+  --hover-link: var(--primary);
+  --hover-transition: .25s ease-in-out;
+
+  // Box shadow
+  --shadow-md: 4px 0px 4px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0px 0px 16px rgba(0, 0, 0, 0.08);
+}
